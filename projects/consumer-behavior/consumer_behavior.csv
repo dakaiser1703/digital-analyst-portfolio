@@ -1,0 +1,13 @@
+segment,device,acquisition_source,sessions,avg_session_minutes,pages_per_session,converted
+New,Mobile,Search,2,3.8,4,0
+New,Desktop,Social,4,5.1,6,0
+Occasional,Mobile,Email,3,4.7,5,0
+Occasional,Desktop,Referral,5,5.4,7,1
+Core,Mobile,Direct,4,6.1,8,1
+Core,Desktop,Search,5,5.8,7,1
+High Intent,Mobile,Email,6,7.2,9,1
+High Intent,Desktop,Direct,4,6.4,8,1
+New,Mobile,Referral,3,4.2,5,0
+Occasional,Mobile,Social,4,5.0,6,0
+Core,Mobile,Email,6,6.7,8,1
+High Intent,Mobile,Search,7,7.5,10,1
