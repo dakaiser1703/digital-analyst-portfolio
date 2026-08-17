@@ -1,12 +1,1 @@
-const reveal = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.animate(
-        [{opacity:0, transform:"translateY(24px)"},{opacity:1, transform:"translateY(0)"}],
-        {duration:650, easing:"cubic-bezier(.2,.8,.2,1)", fill:"both"}
-      );
-      reveal.unobserve(entry.target);
-    }
-  });
-},{threshold:.12});
-document.querySelectorAll(".job,.project-card,.skill-block").forEach(el=>reveal.observe(el));
+const reveal = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.animate([{opacity:0,transform:"translateY(28px) scale(.985)"},{opacity:1,transform:"translateY(0) scale(1)"}],{duration:720,easing:"cubic-bezier(.2,.8,.2,1)",fill:"both"}); reveal.unobserve(entry.target); } }); },{threshold:.1}); document.querySelectorAll(".job,.skill-block,.statement-card,.visual-panel,.contact-card,.metric").forEach(el=>reveal.observe(el)); document.querySelectorAll(".skill-block,.statement-card,.contact-card").forEach(card=>{card.addEventListener("mousemove",e=>{const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateX(${y*-2.5}deg) rotateY(${x*3}deg) translateY(-4px)`});card.addEventListener("mouseleave",()=>card.style.transform="")});
